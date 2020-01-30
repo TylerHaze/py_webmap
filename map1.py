@@ -17,10 +17,10 @@ for lt, ln, el in zip(volcanoe_lat, volcanoe_lon, elev):
     if el < 1000:
         color = 'red'
     elif el <= 3000:
-        color = 'gray'
+        color = 'orange'
     else:
         color = 'green'
-    fg.add_child(folium.Marker(location=[lt, ln], popup=el, icon=folium.Icon(color=color)))
+    fg.add_child(folium.CircleMarker(location=[lt, ln], popup=el, fill_color=color, radius=6, fill_opacity=1, color='gray'))
 
 map.add_child(fg)
 
