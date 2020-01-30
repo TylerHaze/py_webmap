@@ -1,2 +1,2 @@
 # py_webmap
-A interactive browser based map with folium
+A interactive browser based map, made with folium
